@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b1a46a7541573247bafee3dcd49e294, type: 3}
+  m_Name: Key_001
+  m_EditorClassIdentifier: 
+  noun: llave
+  sprite: {fileID: 21300000, guid: b05f5e8d899c62344aca644aed83505a, type: 3}
+  description: 
+  interactions:
+  - inputAction: {fileID: 11400000, guid: cba6f3fda6418fb418ad03bb919b1759, type: 2}
+    textResponse: "Luego de una inspecci\xF3n a fondo, una figura color lat\xF3n aparece
+      entre un par de frascos de perfume.\nAgarr\xE1s la llave."
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 088f8b0287f9d5745abae42fc73d1ce3, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 11400000, guid: d1ca7be131849a940ade5bdc267e3e8e, type: 2}

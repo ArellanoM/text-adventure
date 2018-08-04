@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad3b34362ec216e43a650c4ef0351d1a, type: 3}
+  m_Name: 007_WestEntranceHall
+  m_EditorClassIdentifier: 
+  displayName: Hall Principal
+  description: "En el centro de la habitaci\xF3n se balancea de manera imperceptible
+    un lujoso candelabro. Si tan solo brillara como deber\xEDa, podr\xEDas reconocer
+    el color de la alfombra que llega hasta la aparente entrada al lugar."
+  roomName: 007_WestEntranceHall
+  exits:
+  - keyString: norte
+    exitDescription: Unas majestuosas escaleras al <color=#33ccffff>norte</color>
+      llevan a la planta alta.
+    locked: 0
+    valueRoom: {fileID: 11400000, guid: f177110ac1dc9084d9117b09a52c0d35, type: 2}
+  - keyString: este
+    exitDescription: Al <color=#33ccffff>este</color> se extiende el resto del hall.
+    locked: 0
+    valueRoom: {fileID: 11400000, guid: 52030a051e4dd96419838f633d6b38d5, type: 2}
+  - keyString: oeste
+    exitDescription: Un par de macizas puertas de roble se encuentran al <color=#33ccffff>oeste</color>.
+    locked: 1
+    valueRoom: {fileID: 0}
+  interactableObjectsInRoom: []

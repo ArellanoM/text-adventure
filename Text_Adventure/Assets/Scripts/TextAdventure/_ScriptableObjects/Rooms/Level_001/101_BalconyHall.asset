@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad3b34362ec216e43a650c4ef0351d1a, type: 3}
+  m_Name: 101_BalconyHall
+  m_EditorClassIdentifier: 
+  displayName: "Balc\xF3n - Hall"
+  description: "El balc\xF3n del hall es un lugar en franca decadencia: restos de
+    las barandas se esparcen por todo el piso. Es imperativo moverse con precauci\xF3n."
+  roomName: 101_BalconyHall
+  exits:
+  - keyString: este
+    exitDescription: Hay una puerta al <color=#33ccffff>este</color> que parece llevar
+      a las habitaciones de la planta alta.
+    locked: 1
+    valueRoom: {fileID: 0}
+  - keyString: oeste
+    exitDescription: Las escaleras al <color=#33ccffff>oeste</color> llevan al Hall
+      principal.
+    locked: 0
+    valueRoom: {fileID: 11400000, guid: 53fcb4092b92fc440af8155ed352e435, type: 2}
+  interactableObjectsInRoom: []

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad3b34362ec216e43a650c4ef0351d1a, type: 3}
+  m_Name: 007_EastEntranceHall
+  m_EditorClassIdentifier: 
+  displayName: Hall Principal
+  description: "Lo que antes habr\xEDa sido una imponente habitaci\xF3n iluminada,
+    ahora demostraba ser s\xF3lo imponente. Al estar envuelto en las sombras, no hay
+    mucho que observar, pero los sectores adyacentes prometen mayor detalle."
+  roomName: 007_EastEntranceHall
+  exits:
+  - keyString: norte
+    exitDescription: "La puerta al <color=#33ccffff>norte</color> lleva a la habitaci\xF3n
+      de hu\xE9spedes."
+    locked: 0
+    valueRoom: {fileID: 11400000, guid: c5284e8eed8239b4fbf30195e6be944b, type: 2}
+  - keyString: este
+    exitDescription: Hay una puerta al <color=#33ccffff>este</color>.
+    locked: 1
+    valueRoom: {fileID: 0}
+  - keyString: sur
+    exitDescription: Del <color=#33ccffff>sur</color> proviene una tenue luz.
+    locked: 0
+    valueRoom: {fileID: 0}
+  - keyString: oeste
+    exitDescription: Al <color=#33ccffff>oeste</color> se extiende el resto del hall.
+    locked: 0
+    valueRoom: {fileID: 11400000, guid: 53fcb4092b92fc440af8155ed352e435, type: 2}
+  interactableObjectsInRoom: []

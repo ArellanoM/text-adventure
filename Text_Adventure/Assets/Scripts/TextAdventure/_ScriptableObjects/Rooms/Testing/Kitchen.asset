@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad3b34362ec216e43a650c4ef0351d1a, type: 3}
+  m_Name: Kitchen
+  m_EditorClassIdentifier: 
+  displayName: Kitchen
+  description: La cocina. SI, la cocina.
+  roomName: kitchen
+  exits:
+  - keyString: este
+    exitDescription: La puerta al <color=#33ccffff>este</color> lleva al hall.
+    locked: 0
+    valueRoom: {fileID: 11400000, guid: a9cba7b38eeaca44783ed78c07e8b1fc, type: 2}
+  interactableObjectsInRoom: []

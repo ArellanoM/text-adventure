@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad3b34362ec216e43a650c4ef0351d1a, type: 3}
+  m_Name: Starting Room
+  m_EditorClassIdentifier: 
+  displayName: Hall
+  description: "Est\xE1s en un laberinto de peque\xF1os y retorcidos pasajes, todos
+    muy similares."
+  roomName: starting room
+  exits:
+  - keyString: norte
+    exitDescription: Se ve una entrada a oscuras al <color=#33ccffff>norte</color>.
+    locked: 0
+    valueRoom: {fileID: 11400000, guid: 4cb3aab870354704e918a9f672529e9a, type: 2}
+  - keyString: este
+    exitDescription: Una tenue luz ilumina una extravagante puerta al <color=#33ccffff>este</color>.
+    locked: 0
+    valueRoom: {fileID: 11400000, guid: 065b43398565a2e4681dd708b1dc6f2a, type: 2}
+  - keyString: oeste
+    exitDescription: Al <color=#33ccffff>oeste</color> se observa una maciza puerta
+      de hierro.
+    locked: 0
+    valueRoom: {fileID: 11400000, guid: 31ed79a12a4779646b1bc0b75c118205, type: 2}
+  interactableObjectsInRoom:
+  - {fileID: 11400000, guid: 437b37ff58c09e6479789eeeaeba327a, type: 2}
+  - {fileID: 11400000, guid: a1a5b25a27a3eff4bb882377a5fac8b2, type: 2}

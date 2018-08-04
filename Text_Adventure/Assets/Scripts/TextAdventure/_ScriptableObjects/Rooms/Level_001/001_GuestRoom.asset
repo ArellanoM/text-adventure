@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad3b34362ec216e43a650c4ef0351d1a, type: 3}
+  m_Name: 001_GuestRoom
+  m_EditorClassIdentifier: 
+  displayName: "Habitaci\xF3n de hu\xE9spedes"
+  description: "La habitaci\xF3n de hu\xE9spedes es un tanto peque\xF1a, pero parece
+    c\xF3moda."
+  roomName: 001_GuestRoom
+  exits:
+  - keyString: oeste
+    exitDescription: 'Una modesta puerta se halla al <color=#33ccffff>oeste</color>. '
+    locked: 0
+    valueRoom: {fileID: 11400000, guid: 9c2296a0e4603a94dac514dc139fc3a4, type: 2}
+  - keyString: sur
+    exitDescription: Hay otra puerta al <color=#33ccffff>sur</color>.
+    locked: 1
+    valueRoom: {fileID: 11400000, guid: 52030a051e4dd96419838f633d6b38d5, type: 2}
+  interactableObjectsInRoom:
+  - {fileID: 11400000, guid: 97f4db705c942b1458cb17206e512f16, type: 2}
