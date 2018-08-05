@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Key_001
   m_EditorClassIdentifier: 
   noun: llave
-  sprite: {fileID: 21300000, guid: b05f5e8d899c62344aca644aed83505a, type: 3}
+  sprite: {fileID: 21300000, guid: 87d293d2495a69a4992e24e8bb64b4d1, type: 3}
   description: 
   interactions:
   - inputAction: {fileID: 11400000, guid: cba6f3fda6418fb418ad03bb919b1759, type: 2}
