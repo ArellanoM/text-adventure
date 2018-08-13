@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b1a46a7541573247bafee3dcd49e294, type: 3}
+  m_Name: Lighter_001
+  m_EditorClassIdentifier: 
+  noun: encendedor
+  sprite: {fileID: 21300000, guid: e8106c03311b5e844b0712b9cdbe0c35, type: 3}
+  description: "Sobre una peque\xF1a mesa auxiliar descansa un <color=yellow>encendedor</color>."
+  interactions:
+  - inputAction: {fileID: 11400000, guid: ba05a6af27efeea41b7ab3c68d52ddca, type: 2}
+    textResponse: La tapa del <color=yellow>encendedor</color> no terminar de cerrar.
+      Parece llevar una buena cantidad de combustible.
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: cba6f3fda6418fb418ad03bb919b1759, type: 2}
+    textResponse: "Guard\xE1s el objeto en la <color=green>mochila</color>."
+    actionResponse: {fileID: 0}

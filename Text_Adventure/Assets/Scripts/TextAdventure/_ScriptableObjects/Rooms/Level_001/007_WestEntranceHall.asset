@@ -30,4 +30,5 @@ MonoBehaviour:
     exitDescription: Un par de macizas puertas de roble se encuentran al <color=#33ccffff>oeste</color>.
     locked: 1
     valueRoom: {fileID: 0}
-  interactableObjectsInRoom: []
+  interactableObjectsInRoom:
+  - {fileID: 11400000, guid: 8a1e52493bf5bc342b1fac2f10fd8107, type: 2}

@@ -17,7 +17,7 @@ public class TextInput : MonoBehaviour
 
 	void AcceptStringInput(string userInput)
 	{
-		userInput = userInput.ToLower();										// User input is lowered to avoid ambiguity
+		userInput = userInput.ToLower();										    // User input is lowered to avoid ambiguity
 		controller.LogStringWithReturn("<color=grey>" + userInput + "</color>");	// "<color=red>" + userInput + "</color>"    or    userInput
 
 		char[] delimiterCharacters = { ' ' };									// We create a delimiter with a space char
@@ -31,11 +31,11 @@ public class TextInput : MonoBehaviour
 			// If the verb slot (from the array) IS a valid inputAction
 			if (inputAction.keyWord == separatedInputWords[0])					// ERROR: Go, Examine, Take, Use
 			{
-				if (ValidInputAction (inputAction, separatedInputWords))
-				{
-					// We let the actionInput take an appropiate response
-					inputAction.RespondToInput(controller, separatedInputWords);
-				}
+                if (ValidInputAction(inputAction, separatedInputWords))
+                {
+                    // We let the actionInput take an appropiate response
+                    inputAction.RespondToInput(controller, separatedInputWords);
+                }
 			}
 		}
 

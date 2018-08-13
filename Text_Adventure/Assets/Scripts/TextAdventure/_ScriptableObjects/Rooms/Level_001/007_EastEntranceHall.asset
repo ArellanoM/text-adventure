@@ -28,7 +28,7 @@ MonoBehaviour:
     valueRoom: {fileID: 0}
   - keyString: sur
     exitDescription: Del <color=#33ccffff>sur</color> proviene una tenue luz.
-    locked: 0
+    locked: 1
     valueRoom: {fileID: 0}
   - keyString: oeste
     exitDescription: Al <color=#33ccffff>oeste</color> se extiende el resto del hall.
