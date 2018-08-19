@@ -6,12 +6,7 @@ public class Constants {
 
     public const string COLOR_LIGHTBLUE = "#33ccffff";
 
-    public const string TITLE = "     _    _   ____                _            _      _   ____       _            _       _       " + "\n" +
-        "    / \\  | | | __ )  ___  _ __ __| | ___    __| | ___| | |  _ \\ _ __(_)_ __   ___(_)_ __ (_) ___  " + "\n" +
-        "   / _ \\ | | |  _ \\ / _ \\| '__/ _` |/ _ \\  / _` |/ _ \\ | | |_) | '__| | '_ \\ / __| | '_ \\| |/ _ \\ " + "\n" +
-        "  / ___ \\| | | |_) | (_) | | | (_| |  __/ | (_| |  __/ | |  __/| |  | | | | | (__| | |_) | | (_) |" + "\n" +
-        " /_/   \\_\\_| |____/ \\___/|_|  \\__,_|\\___|  \\__,_|\\___|_| |_|   |_|  |_|_| |_|\\___|_| .__/|_|\\___/ " + "\n" +
-        "                                                                                   |_|            ";
+    public const string TITLE = " ";
 
     public const string AYUDA = "<i>" +
         "" +
@@ -19,15 +14,15 @@ public class Constants {
         "Comandos disponibles:" +
         "\n" +
         "\n" +
-        "elegir + <color="+COLOR_LIGHTBLUE+">direccion</color>" +
+        "elegir <color="+COLOR_LIGHTBLUE+">direccion</color>" +
         "\n" +
-        "examinar + <color=yellow>objeto</color>" +
+        "examinar <color=yellow>objeto</color>" +
         "\n" +
-        "agarrar + <color=yellow>objeto</color>" +
+        "agarrar <color=yellow>objeto</color>" +
         "\n" +
         "<color=green>mochila</color>" +
         "\n" +
-        "usar + <color=yellow>objeto</color>" +
+        "usar <color=yellow>objeto</color>" +
         "\n" +
         "" +
         "</i>";

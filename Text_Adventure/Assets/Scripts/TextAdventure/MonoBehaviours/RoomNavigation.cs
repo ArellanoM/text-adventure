@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class RoomNavigation : MonoBehaviour {
 
-	public Room currentRoom;
+    /// <summary> The Room the Player is currently in. </summary>
+    public Room currentRoom;
 
 	Dictionary<string, Room> exitDictionary = new Dictionary<string, Room>();
 	GameController controller;

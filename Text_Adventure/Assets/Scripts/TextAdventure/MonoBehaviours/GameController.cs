@@ -5,19 +5,27 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
 
+    /// <summary> The Text field where all events are displayed </summary>
 	public Text displayText;
+    /// <summary> The Text field where the name of the current room is displayed </summary>
     public Text roomDisplay;    // NEW!
+    /// <summary> The array of available Input Actions </summary>
+    /// <remarks> Input Actions are added through the Inspector </remarks>
     public InputAction[] inputActions;
-
-    [HideInInspector] public int numeroDeAccion = 86;
 
 	[HideInInspector] public RoomNavigation roomNavigation;
 	[HideInInspector] public List<string> interactionDescriptionsInRoom = new List<string>();
 	[HideInInspector] public InteractableItems interactableItems;
 
-	List<string> actionLog = new List<string>();
+    /// <summary> The "Raw" form of the Log of events </summary>
+    /// <remarks> The elements of this List are combined into a single String and then get Displayed </remarks>
+    List<string> actionLog = new List<string>();
 
-	// Use this for initialization
+	//
+    // METHODS
+    //
+    
+    // Use this for initialization
 	void Awake ()
 	{
 		interactableItems = GetComponent<InteractableItems>();
@@ -40,7 +48,11 @@ public class GameController : MonoBehaviour {
 		LogStringWithReturn(Constants.AYUDA);
 	}
 
-	public void DisplayLoggedText()
+
+    /// <summary>
+    /// Update Game's text Log from actionLog (an array)
+    /// </summary>
+    public void DisplayLoggedText()
 	{
 		string logAsText = string.Join ("\n", actionLog.ToArray());				// List of strings (Log) -> Join into a single string
 
@@ -66,7 +78,11 @@ public class GameController : MonoBehaviour {
 		PrepareObjectsToTakeOrExamine(roomNavigation.currentRoom);
 	}
 
-	void PrepareObjectsToTakeOrExamine(Room currentRoom)
+    /// <summary>
+    /// Loop through interactableObjectsInRoom and their interactions
+    /// </summary>
+    /// <param name="currentRoom"></param>
+    void PrepareObjectsToTakeOrExamine(Room currentRoom)
 	{
 		for (int i = 0; i < currentRoom.interactableObjectsInRoom.Length; i++)
 		{
@@ -94,7 +110,14 @@ public class GameController : MonoBehaviour {
 		}
 	}
 
-	public string TestVerbDictionaryWithNoun(Dictionary<string, string> verbDictionary, string verb, string noun)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="verbDictionary"></param>
+    /// <param name="verb"></param>
+    /// <param name="noun"></param>
+    /// <returns></returns>
+    public string TestVerbDictionaryWithNoun(Dictionary<string, string> verbDictionary, string verb, string noun)
 	{
 		if (verbDictionary.ContainsKey (noun))
 		{
@@ -119,6 +142,7 @@ public class GameController : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        // Display Room name in Event Bar (Header)
         roomDisplay.text = roomNavigation.currentRoom.displayName;
 
         if (Input.GetKey("escape"))

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class InteractableItems : MonoBehaviour
 {
+    /// <summary> A list of all possible Interactable Objects in the game. </summary>
+    /// <remarks> Usable Items are added through the Inspector </remarks>
     public List<InteractableObject> usableItemList;
 
 	public Dictionary<string, string> examineDictionary = new Dictionary<string, string>();
@@ -22,7 +24,11 @@ public class InteractableItems : MonoBehaviour
     //OnScreen Inventory handling
     GameInventory gameInventory;
 
-	void Awake()
+    //
+    // METHODS
+    //
+
+    void Awake()
 	{
         controller = GetComponent<GameController>();
 
@@ -31,7 +37,11 @@ public class InteractableItems : MonoBehaviour
         gameInventory = GetComponent<GameInventory>();
     }
 
-	public string GetObjectsNotInInventory(Room currentRoom, int i)
+    /// <summary>  </summary>
+    /// <param name="currentRoom"></param>
+    /// <param name="i"></param>
+    /// <returns></returns>
+    public string GetObjectsNotInInventory(Room currentRoom, int i)
 	{
 		InteractableObject interactableInRoom = currentRoom.interactableObjectsInRoom[i];
 
@@ -58,7 +68,8 @@ public class InteractableItems : MonoBehaviour
 			{
 				Interaction interaction = interactableObjectInInventory.interactions[j];
 
-				if (interaction.actionResponse == null)
+                // Skip to next For cycle
+                if (interaction.actionResponse == null)
 					continue;
 
 				if (!useDictionary.ContainsKey(noun))
@@ -69,7 +80,9 @@ public class InteractableItems : MonoBehaviour
 		}
 	}
 
-    // Returns an object that can be interacted with (must be in Usable Item List)
+    /// <summary>
+    /// Returns an object that can be interacted with (must be in Usable Item List)
+    /// </summary>
     InteractableObject GetInteractableObjectFromUsableList(string noun)
 	{
 		for (int i = 0; i < usableItemList.Count; i++)

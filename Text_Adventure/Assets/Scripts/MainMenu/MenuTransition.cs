@@ -17,6 +17,7 @@ public class MenuTransition : MonoBehaviour {
         StartCoroutine(FadeOut());
     }
 
+    // Gradually raises Alpha value from 0 to 1
     IEnumerator FadeOut()
     {
         //Set the overlay Panel active and ready to fade
